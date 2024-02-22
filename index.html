@@ -119,9 +119,8 @@
 <script>
   window.onload = function() {
     const urlParams = new URLSearchParams(window.location.search);
-    const gameId = urlParams.get('file');
-    document.getElementById("player").src = gameId;
-    document.getElementById("screen").style.display = "none" 
-    document.getElementById("hi").style.display = "block" 
+    document.getElementById("player").src = urlParams.get('file');
+    document.getElementById("screen").style.display = "none";
+    document.getElementById("hi").style.display = "block" ;
   }
 </script>
