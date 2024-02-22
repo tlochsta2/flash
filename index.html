@@ -1,0 +1,24 @@
+<div class="screen">
+
+  <div class="loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
+</div>
+<div id="hi">
+<script src="https://tm-ruffle.pages.dev/ruffle/ruffle.js"></script>
+<div class="swf"dir="ltr" style="text-align: center;" trbidi="on">
+        <embed id="player" height="100%" pluginspage=" http://www.macromedia.com/go/getflashplayer" src="" type="application/x-shockwave-flash" width="620"></embed>
+</div>
+</div>
+<script>
+  window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const gameId = urlParams.get('file');
+    document.getElementById("player").src = gameId;
+    document.getElementById("screen").style.display = "none" 
+    document.getElementById("hi").style.display = "block" 
+  }
+</script>
